@@ -7,7 +7,7 @@ if (preg_match("/[a-zA-Z0-9_]{3,16}/",$username) &&
 preg_match("/^[a-zA-Z\d_]{8,}$/", $password))
 {
    $regsql = "insert into members (username,password)
-   values ('$username',MD5('$password'))";
+   values('$username','$password')";
    $user_query = mysql_query($regsql,$conn) or die('mysql query error');
    echo " Congratulation, $username, Registered successfully ! <br>";
    echo 'Go to login page  <a href="login.html">  Login</a>';
