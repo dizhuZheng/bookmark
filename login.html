@@ -1,0 +1,37 @@
+<html>
+<style>
+    form{
+        background-color: rgb(140, 127, 255);
+    }
+    .ck{
+        color: red;
+    }
+</style>
+<body>
+    <form action="login.php" method="POST">
+        <fieldset>
+            <legend class="ck">User Login</legend>
+            <ul>
+            <li>
+            <label >UserName:</label>
+            <input type="text" name="username" autofocus/>
+            </li>
+            <li>
+            <label >Password:</label>
+            <input type="password" name="password" autofocus/>
+            </li>
+            <li>
+            <label></label>
+            <input type="submit" name="login" value="login" class="login_btn"/>
+            </li>
+            </ul>
+            <p class="main">
+                Click here to register !
+                <a class = "ck" href="http://localhost/register.html">
+                    <strong>Register</strong>
+                </a>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
